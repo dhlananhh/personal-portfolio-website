@@ -6,55 +6,57 @@ import { HeroOrbit } from "@/components/HeroOrbit";
 export const HeroSection = () => {
   return (
     <div className="py-32 md:py-48 lg:py-60 relative z-0">
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 -z-30 opacity-5"
-        style={{
-          backgroundImage: `url(${Images.grainImage})`,
-        }}
-      />
+      <div className="absolute inset-0 [mask-image: linear-gradient(to_bottom, transparent, black_10%, transparent)]">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 -z-30 opacity-5"
+          style={{
+            backgroundImage: `url(${Images.grainImage})`,
+          }}
+        />
 
-      {/* Hero Rings */}
-      <div className="size-[620px] hero-ring" />
-      <div className="size-[820px] hero-ring" />
-      <div className="size-[1020px] hero-ring" />
-      <div className="size-[1220px] hero-ring" />
+        {/* Hero Rings */}
+        <div className="size-[620px] hero-ring" />
+        <div className="size-[820px] hero-ring" />
+        <div className="size-[1020px] hero-ring" />
+        <div className="size-[1220px] hero-ring" />
 
-      {/* Hero Orbits with StarIcon */}
-      <HeroOrbit size={800} rotation={-72}>
-        <Images.StarIcon className="size-28 text-emerald-300" />
-      </HeroOrbit>
-      <HeroOrbit size={550} rotation={20}>
-        <Images.StarIcon className="size-12 text-emerald-300" />
-      </HeroOrbit>
-      <HeroOrbit size={590} rotation={98}>
-        <Images.StarIcon className="size-8 text-emerald-300" />
-      </HeroOrbit>
+        {/* Hero Orbits with StarIcon */}
+        <HeroOrbit size={800} rotation={-72}>
+          <Images.StarIcon className="size-28 text-emerald-300" />
+        </HeroOrbit>
+        <HeroOrbit size={550} rotation={20}>
+          <Images.StarIcon className="size-12 text-emerald-300" />
+        </HeroOrbit>
+        <HeroOrbit size={590} rotation={98}>
+          <Images.StarIcon className="size-8 text-emerald-300" />
+        </HeroOrbit>
 
-      {/* Hero Orbits with SparkleIcon */}
-      <HeroOrbit size={430} rotation={-14}>
-        <Images.SparkleIcon className="size-8 text-emerald-300/20" />
-      </HeroOrbit>
-      <HeroOrbit size={440} rotation={79}>
-        <Images.SparkleIcon className="size-5 text-emerald-300/20" />
-      </HeroOrbit>
-      <HeroOrbit size={530} rotation={178}>
-        <Images.SparkleIcon className="size-10 text-emerald-300/20" />
-      </HeroOrbit>
-      <HeroOrbit size={710} rotation={144}>
-        <Images.SparkleIcon className="size-14 text-emerald-300/20" />
-      </HeroOrbit>
+        {/* Hero Orbits with SparkleIcon */}
+        <HeroOrbit size={430} rotation={-14}>
+          <Images.SparkleIcon className="size-8 text-emerald-300/20" />
+        </HeroOrbit>
+        <HeroOrbit size={440} rotation={79}>
+          <Images.SparkleIcon className="size-5 text-emerald-300/20" />
+        </HeroOrbit>
+        <HeroOrbit size={530} rotation={178}>
+          <Images.SparkleIcon className="size-10 text-emerald-300/20" />
+        </HeroOrbit>
+        <HeroOrbit size={710} rotation={144}>
+          <Images.SparkleIcon className="size-14 text-emerald-300/20" />
+        </HeroOrbit>
 
-      {/* Hero Orbits with custom div */}
-      <HeroOrbit size={720} rotation={85}>
-        <div className="size-3 rounded-full bg-emerald-300" />
-      </HeroOrbit>
-      <HeroOrbit size={520} rotation={-41}>
-        <div className="size-3 rounded-full bg-emerald-300" />
-      </HeroOrbit>
-      <HeroOrbit size={650} rotation={-5}>
-        <div className="size-3 rounded-full bg-emerald-300" />
-      </HeroOrbit>
+        {/* Hero Orbits with custom div */}
+        <HeroOrbit size={720} rotation={85}>
+          <div className="size-3 rounded-full bg-emerald-300" />
+        </HeroOrbit>
+        <HeroOrbit size={520} rotation={-41}>
+          <div className="size-3 rounded-full bg-emerald-300" />
+        </HeroOrbit>
+        <HeroOrbit size={650} rotation={-5}>
+          <div className="size-3 rounded-full bg-emerald-300" />
+        </HeroOrbit>
+      </div>
 
       <div className="container">
         <div className="flex flex-col items-center">
