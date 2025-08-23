@@ -121,7 +121,7 @@ body {
     background-color: dimgray;
   }
   .text-foreground {
-    color: cadetblue;
+    color: crimson;
   }
   body {
     @apply bg-background text-foreground;
