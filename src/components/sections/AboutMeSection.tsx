@@ -37,7 +37,7 @@ const AboutMeSection = () => {
             <div className="relative aspect-[3/4] sm:aspect-square rounded-xl overflow-hidden border border-zinc-800 shadow-2xl group">
               <Image
                 src={ profileImageUrl }
-                alt="Lien Khue Nha"
+                alt="Duong Hoang Lan Anh - Frontend Developer"
                 layout="fill"
                 objectFit="cover"
                 className="transform transition-transform duration-500 group-hover:scale-105"
@@ -56,13 +56,13 @@ const AboutMeSection = () => {
           <div className="space-y-6">
             <GlassmorphicCard>
               <p className="text-lg text-zinc-300 leading-relaxed lg:text-justify">
-                Hello! I&apos;m <strong className="text-teal-400">Liên Khuê Nhã</strong>
+                To be updated soon...
               </p>
               <p className="text-lg text-zinc-300 mt-4 leading-relaxed lg:text-justify">
-                To be continued...
+                To be updated soon...
               </p>
               <p className="text-lg text-zinc-300 mt-4 leading-relaxed lg:text-justify">
-                To be continued...
+                To be updated soon...
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4 mt-8 pt-6 border-t border-zinc-700/50">
@@ -73,7 +73,7 @@ const AboutMeSection = () => {
                 <div>
                   <div className="text-xs sm:text-sm text-white/90">Email</div>
                   <Link href="mailto:dhlananh2309@gmail.com" className="font-medium text-zinc-200 hover:text-teal-400 transition-colors">
-                    youremail@example.com
+                    dhlananh2309@gmail.com
                   </Link>
                 </div>
                 <div>
