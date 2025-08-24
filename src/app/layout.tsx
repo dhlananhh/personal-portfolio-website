@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 
   manifest: "./manifest.json",
   openGraph: {
-    title: "Lan Anh | Web Developer Portfolio",
+    title: "Khue Nha | My Portfolio",
     description: "A personal portfolio to showcase my skills and projects",
     locale: "en_US",
     type: "website",
