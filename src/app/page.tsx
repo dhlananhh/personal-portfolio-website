@@ -1,6 +1,5 @@
 "use client";
 
-
 import { ScrollProgress } from "@/components/custom-ui/ScrollProgress";
 import HeroSection from "@/components/sections/HeroSection";
 import AboutMeSection from "@/components/sections/AboutMeSection";
@@ -13,7 +12,6 @@ import ResumeSection from "@/components/sections/ResumeSection";
 import ContactSection from "@/components/sections/ContactSection";
 import FAQSection from "@/components/sections/FAQSection";
 import GitHubContributionsSection from "@/components/sections/GitHubContributionsSection";
-
 
 export default function HomePage() {
   return (
