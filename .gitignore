@@ -1,7 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+/node_modules/
 /.pnp
 .pnp.*
 .yarn/*
@@ -9,6 +9,8 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+yarn.lock*
+# package-lock.json*
 
 # testing
 /coverage
@@ -19,6 +21,9 @@
 
 # production
 /build
+/.gemini/
+/.github/
+/.idea/
 
 # misc
 .DS_Store
@@ -39,3 +44,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+globals.d.ts
+
+# lockfiles from other package managers
+package-lock.json
+pnpm-lock.yaml
