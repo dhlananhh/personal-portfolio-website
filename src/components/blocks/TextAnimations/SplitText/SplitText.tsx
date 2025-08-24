@@ -1,5 +1,5 @@
 /*
-  Installed from https://reactbits.dev/ts/tailwind/
+	Installed from https://reactbits.dev/ts/tailwind/
 */
 
 import React, { useRef, useEffect } from "react";
@@ -20,7 +20,7 @@ export interface SplitTextProps {
   to?: gsap.TweenVars;
   threshold?: number;
   rootMargin?: string;
-  textAlign?: React.CSSProperties[ "textAlign" ];
+  textAlign?: React.CSSProperties["textAlign"];
   onLetterAnimationComplete?: () => void;
 }
 
@@ -91,8 +91,8 @@ const SplitText: React.FC<SplitTextProps> = ({
 
     const startPct = (1 - threshold) * 100;
     const marginMatch = /^(-?\d+(?:\.\d+)?)(px|em|rem|%)?$/.exec(rootMargin);
-    const marginValue = marginMatch ? parseFloat(marginMatch[ 1 ]) : 0;
-    const marginUnit = marginMatch ? marginMatch[ 2 ] || "px" : "px";
+    const marginValue = marginMatch ? parseFloat(marginMatch[1]) : 0;
+    const marginUnit = marginMatch ? marginMatch[2] || "px" : "px";
     const sign =
       marginValue < 0
         ? `-=${Math.abs(marginValue)}${marginUnit}`
@@ -156,14 +156,14 @@ const SplitText: React.FC<SplitTextProps> = ({
 
   return (
     <p
-      ref={ ref }
-      className={ `split-parent overflow-hidden inline-block whitespace-normal ${className}` }
-      style={ {
+      ref={ref}
+      className={`split-parent overflow-hidden inline-block whitespace-normal ${className}`}
+      style={{
         textAlign,
         wordWrap: "break-word",
-      } }
+      }}
     >
-      { text }
+      {text}
     </p>
   );
 };

@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { motion, MotionProps, useInView } from "motion/react";
+import { motion, MotionProps } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 
 interface TypingAnimationProps extends MotionProps {
@@ -29,10 +29,6 @@ export function TypingAnimation({
   const [ displayedText, setDisplayedText ] = useState<string>("");
   const [ started, setStarted ] = useState(false);
   const elementRef = useRef<HTMLElement | null>(null);
-  const isInView = useInView(elementRef as React.RefObject<Element>, {
-    amount: 0.3,
-    once: true,
-  });
 
   useEffect(() => {
     if (!startOnView) {
@@ -42,23 +38,32 @@ export function TypingAnimation({
       return () => clearTimeout(startTimeout);
     }
 
-    if (!isInView) return;
+    const observer = new IntersectionObserver(
+      ([ entry ]) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            setStarted(true);
+          }, delay);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 },
+    );
 
-    const startTimeout = setTimeout(() => {
-      setStarted(true);
-    }, delay);
+    if (elementRef.current) {
+      observer.observe(elementRef.current);
+    }
 
-    return () => clearTimeout(startTimeout);
-  }, [ delay, startOnView, isInView ]);
+    return () => observer.disconnect();
+  }, [ delay, startOnView ]);
 
   useEffect(() => {
     if (!started) return;
 
-    const graphemes = Array.from(children);
     let i = 0;
     const typingEffect = setInterval(() => {
-      if (i < graphemes.length) {
-        setDisplayedText(graphemes.slice(0, i + 1).join(""));
+      if (i < children.length) {
+        setDisplayedText(children.substring(0, i + 1));
         i++;
       } else {
         clearInterval(typingEffect);
