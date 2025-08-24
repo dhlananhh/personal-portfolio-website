@@ -20,7 +20,7 @@ export default function Footer() {
           <div className="md:col-span-1">
             <Link
               href="#home"
-              className="text-xl font-bold bg-gradient-to-r from-teal-400 via-cyan-500 to-blue-600
+              className="text-xl font-bold bg-gradient-to-r from-rose-400 via-red-500 to-amber-600
               bg-clip-text text-transparent"
             >
               Lan Anh
@@ -53,7 +53,7 @@ export default function Footer() {
                     <li key={ item }>
                       <Link
                         href={ `#${item.toLowerCase()}` }
-                        className="text-gray-600 hover:text-blue-400 transition-colors"
+                        className="text-gray-600 hover:text-amber-400 transition-colors"
                       >
                         { item }
                       </Link>
@@ -76,7 +76,7 @@ export default function Footer() {
                   <li key={ item }>
                     <Link
                       href="#"
-                      className="text-gray-600 hover:text-blue-400 transition-colors"
+                      className="text-gray-600 hover:text-amber-400 transition-colors"
                     >
                       { item }
                     </Link>
@@ -91,16 +91,16 @@ export default function Footer() {
               Contact
             </h3>
             <ul className="space-y-2">
-              <li className="flex items-center text-gray-600 hover:text-blue-400 transition-colors">
+              <li className="flex items-center text-gray-600 hover:text-amber-400 transition-colors">
                 <Mail className="h-4 w-4 mr-2" /> dhlananh2309@gmail.com
               </li>
-              <li className="flex items-center text-gray-600 hover:text-blue-400 transition-colors">
+              <li className="flex items-center text-gray-600 hover:text-amber-400 transition-colors">
                 <Github className="h-4 w-4 mr-2" /> github.com/dhlananhh
               </li>
-              <li className="flex items-center text-gray-600 hover:text-blue-400 transition-colors">
+              <li className="flex items-center text-gray-600 hover:text-amber-400 transition-colors">
                 <Linkedin className="h-4 w-4 mr-2" /> linkedin.com/in/dhlananh
               </li>
-              <li className="flex items-center text-gray-600 hover:text-blue-400 transition-colors">
+              <li className="flex items-center text-gray-600 hover:text-amber-400 transition-colors">
                 <Instagram className="h-4 w-4 mr-2" /> instagram.com/dhlananh
               </li>
             </ul>
@@ -115,19 +115,19 @@ export default function Footer() {
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link
                 href="#"
-                className="text-gray-500 hover:text-blue-600"
+                className="text-gray-500 hover:text-amber-600"
               >
                 Privacy Policy
               </Link>
               <Link
                 href="#"
-                className="text-gray-500 hover:text-blue-600"
+                className="text-gray-500 hover:text-amber-600"
               >
                 Terms of Service
               </Link>
               <Link
                 href="#"
-                className="text-gray-500 hover:text-blue-600"
+                className="text-gray-500 hover:text-amber-600"
               >
                 Cookies
               </Link>
@@ -141,7 +141,7 @@ export default function Footer() {
           href="https://github.com/dhlananhh"
           rel="noopener noreferrer"
           target="_blank"
-          className="p-2 bg-gray-800 rounded-full shadow-lg hover:bg-cyan-500/30 transition-colors"
+          className="p-2 bg-gray-800 rounded-full shadow-lg hover:bg-red-500/30 transition-colors"
           aria-label="Github Profile"
         >
           <Github className="h-5 w-5 text-gray-300" />
@@ -150,7 +150,7 @@ export default function Footer() {
           href="https://linkedin.com/in/dhlananh"
           rel="noopener noreferrer"
           target="_blank"
-          className="p-2 bg-gray-800 rounded-full shadow-lg hover:bg-cyan-500/30 transition-colors"
+          className="p-2 bg-gray-800 rounded-full shadow-lg hover:bg-red-500/30 transition-colors"
           aria-label="LinkedIn Profile"
         >
           <Linkedin className="h-5 w-5 text-gray-300" />
@@ -159,7 +159,7 @@ export default function Footer() {
           href="mailto:dhlananh2309@gmail.com"
           rel="noopener noreferrer"
           target="_blank"
-          className="p-2 bg-gray-800 rounded-full shadow-lg hover:bg-cyan-500/30 transition-colors"
+          className="p-2 bg-gray-800 rounded-full shadow-lg hover:bg-red-500/30 transition-colors"
           aria-label="Send Email"
         >
           <Mail className="h-5 w-5 text-gray-300" />
@@ -168,7 +168,7 @@ export default function Footer() {
           href="https://www.instagram.com/dhlananh"
           rel="noopener noreferrer"
           target="_blank"
-          className="p-2 bg-gray-800 rounded-full shadow-lg hover:bg-cyan-500/30 transition-colors"
+          className="p-2 bg-gray-800 rounded-full shadow-lg hover:bg-red-500/30 transition-colors"
           aria-label="Instagram"
         >
           <Instagram className="h-5 w-5 text-gray-300" />
@@ -180,7 +180,7 @@ export default function Footer() {
         onClick={ scrollToTop }
         aria-label="Scroll to top"
         className="fixed bottom-6 right-6 z-50 p-3 rounded-full bg-gradient-to-r
-        from-teal-400 via-cyan-500 to-blue-600 text-white hover:bg-teal-600
+        from-rose-400 via-red-500 to-amber-600 text-white hover:bg-rose-600
         focus:outline-none focus:ring-2 focus:ring-rose-400 focus:ring-opacity-50
         transition-all duration-300 shadow-lg"
         whileHover={ { scale: 1.1, rotate: 360 } }

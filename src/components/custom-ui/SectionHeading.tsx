@@ -18,14 +18,14 @@ export function SectionHeading({ title, subtitle }: SectionHeadingProps) {
       >
         <div className="inline-block">
           <div className="relative px-3 py-1 text-sm font-medium rounded-full
-            bg-gradient-to-r from-teal-200/65 via-cyan-300/65 to-blue-400/65
+            bg-gradient-to-r from-rose-200/65 via-red-300/65 to-amber-400/65
             backdrop-blur-sm border border-border mb-2"
           >
             <span className="relative z-10 text-foreground/80 text-gray-100">
               { subtitle }
             </span>
             <span className="absolute inset-0 rounded-full bg-gradient-to-r
-            from-teal-400/20 via-cyan-500/20 to-blue-600/20 animate-pulse"></span>
+            from-rose-400/20 via-red-500/20 to-amber-600/20 animate-pulse"></span>
           </div>
         </div>
       </motion.div>
@@ -41,7 +41,7 @@ export function SectionHeading({ title, subtitle }: SectionHeadingProps) {
       </motion.h2>
 
       <motion.div
-        className="w-24 h-1.5 bg-gradient-to-r from-teal-400 via-cyan-500 to-blue-600 rounded-full mx-auto mt-6"
+        className="w-24 h-1.5 bg-gradient-to-r from-rose-400 via-red-500 to-amber-600 rounded-full mx-auto mt-6"
         initial={ { opacity: 0, scale: 0 } }
         whileInView={ { opacity: 1, scale: 1 } }
         transition={ { duration: 0.5, delay: 0.4 } }
