@@ -24,7 +24,7 @@ import {
 } from "@react-three/postprocessing";
 import { BlendFunction } from "postprocessing";
 
-const COLORS_TOP = [ "#13FFAA", "#1E67C6", "#CE84CF", "#DD335C" ];
+const COLORS_TOP = [ "#F43F5E", "#D97706", "#FBBF24", "#EF4444" ];
 
 export default function HeroSection() {
   const color = useMotionValue(COLORS_TOP[ 0 ]);
@@ -61,13 +61,13 @@ export default function HeroSection() {
             className="text-5xl font-medium text-slate-100"
             duration={ 0.8 }
             delay={ 30 }
-            children="Hi, I'm Lan Anh!"
+            children="Hi, I'm Khuê Nhã!"
           />
         </motion.div>
 
         <GradientText
           className="max-w-4xl text-4xl sm:text-5xl md:text-7xl font-extrabold mb-4 tracking-tight leading-tight"
-          colors={ [ "#86EFAC", "#2DD4BF", "#3B82F6", "#86EFAC" ] }
+          colors={ [ "#F472B6", "#EF4444", "#F59E0B" ] }
         >
           <span className="block font-bold">
             Transforming Ideas
@@ -98,7 +98,7 @@ export default function HeroSection() {
           <Button
             asChild
             size="lg"
-            className="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 font-medium rounded-lg text-lg px-6 py-3 text-center"
+            className="text-white bg-gradient-to-br from-red-500 to-orange-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-200 font-medium rounded-lg text-lg px-6 py-3 text-center"
           >
             <Link href="#projects" className="flex items-center">
               View Projects <ArrowRight className="ml-2 h-5 w-5" />

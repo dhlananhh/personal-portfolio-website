@@ -87,9 +87,9 @@ export default function Navbar() {
             <Link
               href="/#hero"
               onClick={ (e) => handleLinkClick(e, "/#hero") }
-              className="text-2xl font-bold bg-gradient-to-r from-teal-500 via-cyan-500 to-blue-600 bg-clip-text text-transparent"
+              className="text-2xl font-bold bg-gradient-to-r from-rose-500 via-red-500 to-amber-500 bg-clip-text text-transparent"
             >
-              Lan Anh
+              Khuê Nhã
             </Link>
           </div>
 
@@ -103,7 +103,7 @@ export default function Navbar() {
                 className={ cn(
                   "px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200",
                   activeSection === item.href.substring(2)
-                    ? "text-teal-300 bg-teal-500/10 text-md"
+                    ? "text-rose-300 bg-rose-500/10 text-md"
                     : "text-slate-300 hover:text-white hover:bg-slate-700/50 text-md"
                 ) }
               >
@@ -143,7 +143,7 @@ export default function Navbar() {
                 className={ cn(
                   "block px-3 py-2 rounded-md text-base font-medium transition-colors",
                   activeSection === item.href.substring(2)
-                    ? "bg-teal-500/20 text-teal-300"
+                    ? "bg-rose-500/20 text-rose-300"
                     : "text-slate-200 hover:text-white hover:bg-slate-700/50"
                 ) }
               >

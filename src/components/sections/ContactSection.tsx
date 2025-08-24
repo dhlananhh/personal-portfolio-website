@@ -84,7 +84,7 @@ export default function ContactSection() {
             <div className="border-t border-zinc-700/50 pt-6">
               <h4 className="text-lg font-medium text-white mb-3">Current Status</h4>
               <div className="flex items-center gap-2">
-                <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
+                <div className="w-3 h-3 rounded-full bg-red-500 animate-pulse"></div>
                 <p className="text-sm text-zinc-300">{ currentStatus }</p>
               </div>
             </div>

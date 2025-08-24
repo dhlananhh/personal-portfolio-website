@@ -203,7 +203,7 @@ export default function ContactForm() {
           bg-gradient-to-r from-green-400 via-teal-500 to-blue-600
           hover:from-green-500 hover:via-teal-600 hover:to-blue-700
           focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-800
-          focus:ring-teal-400 disabled:opacity-60 disabled:cursor-not-allowed transition-all duration-300
+          focus:ring-rose-400 disabled:opacity-60 disabled:cursor-not-allowed transition-all duration-300
           group transform hover:scale-[1.02]"
         >
           { formState.status === "loading" && <FiLoader className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" /> }
@@ -217,7 +217,7 @@ export default function ContactForm() {
           initial={ { opacity: 0, y: 10 } }
           animate={ { opacity: 1, y: 0 } }
           className={ `mt-4 p-3 rounded-md text-sm flex items-center shadow
-            ${formState.status === "success" ? "bg-green-500 bg-opacity-25 text-green-300 border border-green-500/50" :
+            ${formState.status === "success" ? "bg-red-500 bg-opacity-25 text-green-300 border border-green-500/50" :
               formState.status === "error" ? "bg-red-500 bg-opacity-25 text-red-300 border border-red-500/50" : ""
             }` }
         >

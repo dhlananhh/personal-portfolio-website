@@ -29,7 +29,7 @@ const getProjectBySlug = (slug: string): Project | undefined => {
 
 const InfoPill = ({ icon: Icon, text }: { icon: React.ComponentType<{ className?: string }>, text: string }) => (
   <div className="flex items-center gap-2 rounded-full border border-slate-700/80 bg-slate-900/60 px-3 py-1.5 text-xs text-slate-300 backdrop-blur-md">
-    <Icon className="h-4 w-4 text-teal-400" />
+    <Icon className="h-4 w-4 text-rose-400" />
     <span>{ text }</span>
   </div>
 );
@@ -43,7 +43,7 @@ const ContentSection = ({ title, icon: Icon, children }: { title: string; icon: 
     viewport={ { once: true, amount: 0.3 } }
   >
     <div className="flex items-center gap-3">
-      <Icon className="h-6 w-6 text-teal-400" />
+      <Icon className="h-6 w-6 text-rose-400" />
       <h2 className="text-2xl font-bold text-slate-100">{ title }</h2>
     </div>
     <div className="prose prose-invert prose-lg max-w-none text-slate-300/90">
@@ -86,7 +86,7 @@ export default function ProjectDetailPage(props: { params: Promise<{ slug: strin
         {/* Gradient Aurora Background */ }
         <div className="absolute inset-0 z-0 opacity-40">
           <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-600 rounded-full mix-blend-screen filter blur-3xl animate-blob"></div>
-          <div className="absolute top-0 -right-4 w-72 h-72 bg-teal-500 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-2000"></div>
+          <div className="absolute top-0 -right-4 w-72 h-72 bg-rose-500 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-2000"></div>
           <div className="absolute bottom-20 -left-20 w-72 h-72 bg-pink-500 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-4000"></div>
         </div>
 
@@ -141,7 +141,7 @@ export default function ProjectDetailPage(props: { params: Promise<{ slug: strin
                 <div className="flex h-6 items-center gap-1.5 px-2">
                   <div className="h-3 w-3 rounded-full bg-red-500"></div>
                   <div className="h-3 w-3 rounded-full bg-yellow-400"></div>
-                  <div className="h-3 w-3 rounded-full bg-green-500"></div>
+                  <div className="h-3 w-3 rounded-full bg-red-500"></div>
                 </div>
                 <div className="mt-1 aspect-video w-full overflow-hidden rounded-b-lg bg-gray-900">
                   <Image
@@ -195,7 +195,7 @@ export default function ProjectDetailPage(props: { params: Promise<{ slug: strin
             <div className="flex flex-wrap gap-3">
               {
                 project.tools.map(tool => (
-                  <Badge key={ tool } variant="secondary" className="border-none bg-teal-400/10 px-4 py-1 text-sm text-teal-300 hover:bg-teal-700">
+                  <Badge key={ tool } variant="secondary" className="border-none bg-teal-400/10 px-4 py-1 text-sm text-rose-300 hover:bg-teal-700">
                     { tool }
                   </Badge>
                 ))
@@ -281,7 +281,7 @@ export default function ProjectDetailPage(props: { params: Promise<{ slug: strin
 
                         {/* Active border */ }
                         { activeIndex === idx && (
-                          <motion.div layoutId="active-thumbnail-border" className="absolute inset-0 border-2 border-teal-400 rounded-md" />
+                          <motion.div layoutId="active-thumbnail-border" className="absolute inset-0 border-2 border-rose-400 rounded-md" />
                         ) }
                       </div>
                     )) }

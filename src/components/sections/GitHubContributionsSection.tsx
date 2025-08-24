@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 const portfolioDarkTheme = {
-  dark: [ "#172A3A", "#0D505E", "#1D8383", "#39C1AD", "#4DFFE2" ],
+  dark: [ "#172A3A", "#572232", "#9F2640", "#E11D48", "#F472B6" ],
 }
 
 const GITHUB_YEARS = [ 2025, 2024, 2023 ];
@@ -63,9 +63,9 @@ export default function GitHubContributions() {
                 onClick={ () => setSelectedYear(year) }
                 className={ cn(
                   "px-4 py-2 rounded-lg font-semibold text-sm transition-all duration-300",
-                  "focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-950 focus:ring-teal-400",
+                  "focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-950 focus:ring-rose-400",
                   selectedYear === year
-                    ? "bg-teal-500 text-white shadow-lg"
+                    ? "bg-rose-500 text-white shadow-lg"
                     : "bg-slate-800 text-slate-300 hover:bg-slate-700/80 hover:text-white"
                 ) }
               >
@@ -85,7 +85,7 @@ export default function GitHubContributions() {
             href="https://github.com/dhlananhh"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-teal-400 hover:text-teal-300 transition-colors"
+            className="text-rose-400 hover:text-rose-300 transition-colors"
           >
             View my full profile on GitHub
           </a>

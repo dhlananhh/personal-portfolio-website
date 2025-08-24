@@ -39,7 +39,7 @@ const formatDate = (date: Date): string => {
 export default function ProjectCard({ project, index }: ProjectCardProps) {
   const statusColor =
     project.projectStatus.toLowerCase() === "completed"
-      ? "bg-green-500 text-green-50"
+      ? "bg-red-500 text-green-50"
       : project.projectStatus.toLowerCase() === "in progress"
         ? "bg-yellow-500 text-yellow-50"
         : "bg-gray-500 text-gray-50";
@@ -70,7 +70,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         </div>
 
         <div className="p-5 flex flex-col flex-grow">
-          <h3 className="text-xl sm:text-2xl font-semibold mb-2 text-teal-400">
+          <h3 className="text-xl sm:text-2xl font-semibold mb-2 text-rose-400">
             { project.title }
           </h3>
           <p className="text-gray-400 text-sm mb-3 line-clamp-3 flex-grow">

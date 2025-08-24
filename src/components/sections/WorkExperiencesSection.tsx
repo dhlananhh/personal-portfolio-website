@@ -55,19 +55,19 @@ export default function WorkExperiencesSection() {
                 className="relative mb-12 pl-12 md:pl-0"
                 variants={ itemVariants }
               >
-                <div className={ `absolute top-1 left-4 flex h-8 w-8 items-center justify-center rounded-full bg-teal-500 ring-8 ring-slate-900 md:left-1/2 md:-translate-x-1/2` }>
+                <div className={ `absolute top-1 left-4 flex h-8 w-8 items-center justify-center rounded-full bg-rose-500 ring-8 ring-slate-900 md:left-1/2 md:-translate-x-1/2` }>
                   <Briefcase className="h-4 w-4 text-white" />
                 </div>
 
                 <div className={ `relative md:w-1/2 ${index % 2 === 0 ? "md:left-0 md:pr-8" : "md:left-1/2 md:pl-8"}` }>
-                  <div className={ `rounded-2xl border border-slate-800 bg-slate-900/50 p-6 backdrop-blur-sm transition-all duration-300 hover:border-teal-400/50` }>
+                  <div className={ `rounded-2xl border border-slate-800 bg-slate-900/50 p-6 backdrop-blur-sm transition-all duration-300 hover:border-rose-400/50` }>
 
                     <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
                       <div className="flex-grow">
                         <h3 className="text-xl font-bold text-slate-100">{ exp.role }</h3>
                         <p className="mt-1 text-base font-semibold text-slate-300">{ exp.company }</p>
                       </div>
-                      <p className="flex-shrink-0 whitespace-nowrap rounded-full bg-slate-800 px-3 py-1 text-xs font-semibold text-teal-400 mt-2 sm:mt-0">
+                      <p className="flex-shrink-0 whitespace-nowrap rounded-full bg-slate-800 px-3 py-1 text-xs font-semibold text-rose-400 mt-2 sm:mt-0">
                         { exp.startDate } - { exp.endDate }
                       </p>
                     </div>

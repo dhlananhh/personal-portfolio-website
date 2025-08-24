@@ -27,7 +27,7 @@ export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
             className="h-12 w-12 rounded-full object-cover border-2 border-slate-600"
           />
           <div className="flex flex-col">
-            <cite className="font-semibold not-italic text-teal-400">
+            <cite className="font-semibold not-italic text-rose-400">
               { testimonial.author }
             </cite>
             <cite className="text-sm not-italic text-slate-400">

@@ -110,7 +110,7 @@ export default function SkillsSection() {
             <motion.div
               key={ category.title }
               variants={ itemVariants }
-              className="group relative overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/50 p-6 backdrop-blur-sm transition-all duration-300 hover:border-teal-400/50 hover:bg-slate-900"
+              className="group relative overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/50 p-6 backdrop-blur-sm transition-all duration-300 hover:border-rose-400/50 hover:bg-slate-900"
             >
               <h3 className="mb-6 text-xl font-bold text-slate-100 text-center">
                 { category.title }

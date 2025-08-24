@@ -46,7 +46,7 @@ const AboutMeSection = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
               <div className="absolute bottom-0 left-0 w-full p-4 sm:p-6">
                 <div className="flex items-center gap-2 bg-black/30 backdrop-blur-sm px-3 py-1.5 rounded-md w-fit">
-                  <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-green-500 animate-pulse"></div>
+                  <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-red-500 animate-pulse"></div>
                   <span className="text-xs sm:text-sm font-medium text-gray-100">Available for work</span>
                 </div>
               </div>
@@ -72,7 +72,7 @@ const AboutMeSection = () => {
                 </div>
                 <div>
                   <div className="text-xs sm:text-sm text-white/90">Email</div>
-                  <Link href="mailto:dhlananh2309@gmail.com" className="font-medium text-zinc-200 hover:text-teal-400 transition-colors">
+                  <Link href="mailto:dhlananh2309@gmail.com" className="font-medium text-zinc-200 hover:text-rose-400 transition-colors">
                     dhlananh2309@gmail.com
                   </Link>
                 </div>
